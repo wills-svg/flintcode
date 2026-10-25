@@ -13,8 +13,8 @@
   "scripts": {
     "build": "node node_modules/typescript/bin/tsc -p tsconfig.json",
     "typecheck": "node node_modules/typescript/bin/tsc -p tsconfig.json --noEmit",
-    "test": "npm run build && node --test --test-concurrency=1 dist/tests/unit",
-    "test:unit": "node --test --test-concurrency=1 dist/tests/unit",
+    "test": "npm run build && node --test --test-concurrency=1 dist/tests/unit/*.test.js",
+    "test:unit": "node --test --test-concurrency=1 dist/tests/unit/*.test.js",
     "flintcode": "node bin/flintcode",
     "check": "bash scripts/check.sh"
   },
