@@ -1,0 +1,31 @@
+Flintcode
+Copyright (c) 2026 Flintcode contributors
+
+Flintcode is an independently maintained fork of the MIT-licensed Tau
+harness, Copyright (c) 2026 Tau contributors. Tau composes the MIT-licensed
+pi libraries by Earendil Works:
+
+  https://pi.dev
+  https://github.com/earendil-works/pi
+
+Packages used include @earendil-works/pi-coding-agent, pi-agent-core, pi-ai,
+pi-tui and pi-mcp. Flintcode is not affiliated with or endorsed by Earendil
+Works, Tau's maintainers, Qoder AI, Alibaba, Nous Research, or any provider
+named in its documentation.
+
+Qoder CLI is not included or modified. Qoder CLI has no public source
+repository; its npm distribution is a minified Apache-2.0 bundle. Qoder is
+referenced only as the source of the terminal UX inspiration. The Qoder Agent
+SDK was inspected as part of the architecture research; its custom-model path
+is server-side and is not used by Flintcode.
+
+The Nous Portal OAuth design is informed by:
+- @magpie-community/opencode-nous-auth (MIT), github.com/magpie-community/plugins
+- @ravshansbox/pi-nous (MIT), github.com/ravshansbox/pi-nous
+
+The pi/tau Nous integration installs the latter package from npm; it is not
+bundled in this repository. The public device flow and client identifier are
+used; no credentials, tokens or other applications' session files are included.
+
+All upstream licenses and notices remain in effect. Flintcode's own source is
+MIT licensed; see LICENSE.

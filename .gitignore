@@ -1,0 +1,11 @@
+node_modules/
+dist/
+*.log
+.flintcode/
+.env
+.env.*
+*.tgz
+coverage/
+.cache/
+providers-auth.json
+.tau/

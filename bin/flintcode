@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+import("../dist/src/cli/main.js")
+  .then(async ({ main }) => {
+    process.exitCode = await main();
+  })
+  .catch((error) => {
+    console.error("tau: failed to start:", error instanceof Error ? error.message : error);
+    process.exitCode = 1;
+  });

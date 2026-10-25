@@ -1,0 +1,52 @@
+{
+  "name": "flintcode",
+  "version": "0.1.0",
+  "description": "Flintcode - an extensible terminal coding agent with interchangeable model backends",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "flintcode": "bin/flintcode"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "build": "node node_modules/typescript/bin/tsc -p tsconfig.json",
+    "typecheck": "node node_modules/typescript/bin/tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test --test-concurrency=1 dist/tests/unit",
+    "test:unit": "node --test --test-concurrency=1 dist/tests/unit",
+    "flintcode": "node bin/flintcode",
+    "check": "bash scripts/check.sh"
+  },
+  "dependencies": {
+    "@earendil-works/pi-ai": "1.3.0",
+    "@earendil-works/pi-coding-agent": "1.3.0",
+    "@earendil-works/pi-mcp": "1.3.0",
+    "@earendil-works/pi-tui": "1.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.7.0"
+  },
+  "keywords": [
+    "ai",
+    "coding-agent",
+    "cli",
+    "terminal",
+    "providers",
+    "openai-compatible",
+    "mcp",
+    "skills",
+    "nous"
+  ],
+  "files": [
+    "bin",
+    "dist",
+    "docs",
+    "themes",
+    "scripts",
+    "LICENSE",
+    "NOTICE",
+    "README.md"
+  ]
+}
